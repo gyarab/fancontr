@@ -1,0 +1,9 @@
+*.bak
+*-bak
+*.000
+*.bck
+fp-info-cache
+
+# Outputs
+*.pdf
+*.net

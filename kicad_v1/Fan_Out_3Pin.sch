@@ -1,0 +1,220 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Custom_Symbols:Fan_3Pin J15
+U 1 1 5D5BB0FA
+P 7000 4000
+AR Path="/5D5B12C9/5D5BB0FA" Ref="J15"  Part="1" 
+AR Path="/5D5DC66E/5D5BB0FA" Ref="J14"  Part="1" 
+AR Path="/5D5E688C/5D5BB0FA" Ref="J11"  Part="1" 
+AR Path="/5D5EF4F5/5D5BB0FA" Ref="J12"  Part="1" 
+AR Path="/5D61A1B6/5D5BB0FA" Ref="J13"  Part="1" 
+AR Path="/5D5AAFF5/5D5BB0FA" Ref="J10"  Part="1" 
+F 0 "J14" H 6524 3969 50  0000 R CNN
+F 1 "Fan_3Pin" H 6524 4060 50  0000 R CNN
+F 2 "Custom_Footprints:PinHeader_1x03_P2.54mm_Horizontal_NoSilk" H 7000 4000 50  0001 C CNN
+F 3 "~" H 7000 4000 50  0001 C CNN
+	1    7000 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR049
+U 1 1 5D5BC6B6
+P 6800 5350
+AR Path="/5D5B12C9/5D5BC6B6" Ref="#PWR049"  Part="1" 
+AR Path="/5D5DC66E/5D5BC6B6" Ref="#PWR046"  Part="1" 
+AR Path="/5D5E688C/5D5BC6B6" Ref="#PWR037"  Part="1" 
+AR Path="/5D5EF4F5/5D5BC6B6" Ref="#PWR040"  Part="1" 
+AR Path="/5D61A1B6/5D5BC6B6" Ref="#PWR043"  Part="1" 
+AR Path="/5D5AAFF5/5D5BC6B6" Ref="#PWR034"  Part="1" 
+F 0 "#PWR046" H 6800 5100 50  0001 C CNN
+F 1 "GND" H 6805 5177 50  0000 C CNN
+F 2 "" H 6800 5350 50  0001 C CNN
+F 3 "" H 6800 5350 50  0001 C CNN
+	1    6800 5350
+	1    0    0    -1  
+$EndComp
+Text HLabel 5400 3900 0    50   Input ~ 0
+RPM_Sense
+$Comp
+L power:+12V #PWR048
+U 1 1 5D5C3AB4
+P 5400 4000
+AR Path="/5D5B12C9/5D5C3AB4" Ref="#PWR048"  Part="1" 
+AR Path="/5D5DC66E/5D5C3AB4" Ref="#PWR045"  Part="1" 
+AR Path="/5D5E688C/5D5C3AB4" Ref="#PWR036"  Part="1" 
+AR Path="/5D5EF4F5/5D5C3AB4" Ref="#PWR039"  Part="1" 
+AR Path="/5D61A1B6/5D5C3AB4" Ref="#PWR042"  Part="1" 
+AR Path="/5D5AAFF5/5D5C3AB4" Ref="#PWR033"  Part="1" 
+F 0 "#PWR045" H 5400 3850 50  0001 C CNN
+F 1 "+12V" V 5400 4150 50  0000 L CNN
+F 2 "" H 5400 4000 50  0001 C CNN
+F 3 "" H 5400 4000 50  0001 C CNN
+	1    5400 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q7
+U 1 1 5D5CC9A3
+P 5800 4700
+AR Path="/5D5B12C9/5D5CC9A3" Ref="Q7"  Part="1" 
+AR Path="/5D5DC66E/5D5CC9A3" Ref="Q6"  Part="1" 
+AR Path="/5D5E688C/5D5CC9A3" Ref="Q3"  Part="1" 
+AR Path="/5D5EF4F5/5D5CC9A3" Ref="Q4"  Part="1" 
+AR Path="/5D61A1B6/5D5CC9A3" Ref="Q5"  Part="1" 
+AR Path="/5D5AAFF5/5D5CC9A3" Ref="Q2"  Part="1" 
+F 0 "Q6" H 6006 4746 50  0000 L CNN
+F 1 "LGE2300" H 6006 4655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23" H 6000 4800 50  0001 C CNN
+F 3 "https://www.tme.eu/Document/bf2e77ec4ce4a2e1ce1235739925ec99/LGE2300.pdf" H 5800 4700 50  0001 C CNN
+	1    5800 4700
+	1    0    0    -1  
+$EndComp
+Text HLabel 5400 4700 0    50   Input ~ 0
+PWM_In
+$Comp
+L Device:D_Schottky_Small D2
+U 1 1 5D86C107
+P 6200 4100
+AR Path="/5D5AAFF5/5D86C107" Ref="D2"  Part="1" 
+AR Path="/5D5E688C/5D86C107" Ref="D3"  Part="1" 
+AR Path="/5D5EF4F5/5D86C107" Ref="D4"  Part="1" 
+AR Path="/5D61A1B6/5D86C107" Ref="D5"  Part="1" 
+AR Path="/5D5DC66E/5D86C107" Ref="D6"  Part="1" 
+AR Path="/5D5B12C9/5D86C107" Ref="D7"  Part="1" 
+F 0 "D6" V 6350 4100 50  0000 C CNN
+F 1 "D_Small" V 6450 4100 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 6200 4100 50  0001 C CNN
+F 3 "~" V 6200 4100 50  0001 C CNN
+	1    6200 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 5D5CF1A5
+P 6500 4100
+AR Path="/5D5B12C9/5D5CF1A5" Ref="C16"  Part="1" 
+AR Path="/5D5DC66E/5D5CF1A5" Ref="C15"  Part="1" 
+AR Path="/5D5E688C/5D5CF1A5" Ref="C12"  Part="1" 
+AR Path="/5D5EF4F5/5D5CF1A5" Ref="C13"  Part="1" 
+AR Path="/5D61A1B6/5D5CF1A5" Ref="C14"  Part="1" 
+AR Path="/5D5AAFF5/5D5CF1A5" Ref="C11"  Part="1" 
+F 0 "C15" H 6600 4150 50  0000 L CNN
+F 1 "10uF" H 6600 4050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6500 4100 50  0001 C CNN
+F 3 "~" H 6500 4100 50  0001 C CNN
+	1    6500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Small L5
+U 1 1 5DABA74D
+P 6350 4000
+AR Path="/5D5DC66E/5DABA74D" Ref="L5"  Part="1" 
+AR Path="/5D5AAFF5/5DABA74D" Ref="L1"  Part="1" 
+AR Path="/5D5E688C/5DABA74D" Ref="L2"  Part="1" 
+AR Path="/5D5EF4F5/5DABA74D" Ref="L3"  Part="1" 
+AR Path="/5D61A1B6/5DABA74D" Ref="L4"  Part="1" 
+AR Path="/5D5B12C9/5DABA74D" Ref="L6"  Part="1" 
+F 0 "L5" V 6600 3950 50  0000 L CNN
+F 1 "10uH" V 6500 3900 50  0000 L CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6350 4000 50  0001 C CNN
+F 3 "~" H 6350 4000 50  0001 C CNN
+	1    6350 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 5DEADEB0
+P 5550 4200
+AR Path="/5D5B12C9/5DEADEB0" Ref="R11"  Part="1" 
+AR Path="/5D5AAFF5/5DEADEB0" Ref="R6"  Part="1" 
+AR Path="/5D5E688C/5DEADEB0" Ref="R7"  Part="1" 
+AR Path="/5D5EF4F5/5DEADEB0" Ref="R8"  Part="1" 
+AR Path="/5D61A1B6/5DEADEB0" Ref="R9"  Part="1" 
+AR Path="/5D5DC66E/5DEADEB0" Ref="R10"  Part="1" 
+F 0 "R10" H 5350 4250 50  0000 L CNN
+F 1 "750" H 5350 4150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5550 4200 50  0001 C CNN
+F 3 "~" H 5550 4200 50  0001 C CNN
+	1    5550 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4300 5900 4400
+Wire Wire Line
+	5550 4400 5900 4400
+Connection ~ 5900 4400
+Wire Wire Line
+	5900 4400 5900 4500
+Wire Wire Line
+	5400 4000 5550 4000
+Wire Wire Line
+	5550 4300 5550 4400
+Wire Wire Line
+	5550 4100 5550 4000
+Wire Wire Line
+	5900 5000 5900 4900
+Wire Wire Line
+	6800 4100 6800 4200
+Wire Wire Line
+	6500 4200 6800 4200
+Connection ~ 6800 4200
+Wire Wire Line
+	6500 4000 6800 4000
+Wire Wire Line
+	5550 4000 5700 4000
+Connection ~ 5550 4000
+Wire Wire Line
+	5900 5000 6800 5000
+Wire Wire Line
+	6800 4200 6800 5000
+Wire Wire Line
+	6800 5000 6800 5350
+Connection ~ 6800 5000
+Wire Wire Line
+	6100 4000 6200 4000
+Wire Wire Line
+	6200 4200 6500 4200
+Connection ~ 6500 4200
+Wire Wire Line
+	6200 4000 6250 4000
+Connection ~ 6200 4000
+Wire Wire Line
+	6450 4000 6500 4000
+Connection ~ 6500 4000
+Wire Wire Line
+	5400 4700 5600 4700
+$Comp
+L Device:Q_PMOS_GSD Q13
+U 1 1 5DEA7476
+P 5900 4100
+AR Path="/5D5B12C9/5DEA7476" Ref="Q13"  Part="1" 
+AR Path="/5D5AAFF5/5DEA7476" Ref="Q8"  Part="1" 
+AR Path="/5D5E688C/5DEA7476" Ref="Q9"  Part="1" 
+AR Path="/5D5EF4F5/5DEA7476" Ref="Q10"  Part="1" 
+AR Path="/5D61A1B6/5DEA7476" Ref="Q11"  Part="1" 
+AR Path="/5D5DC66E/5DEA7476" Ref="Q12"  Part="1" 
+F 0 "Q12" V 6243 4100 50  0000 C CNN
+F 1 "Q_PMOS_DGS" V 6152 4100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23" H 6100 4200 50  0001 C CNN
+F 3 "~" H 5900 4100 50  0001 C CNN
+	1    5900 4100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5400 3900 6800 3900
+$EndSCHEMATC
