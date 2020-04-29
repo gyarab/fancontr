@@ -1,0 +1,49 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AP2120N-3.3TRG1
+D 150mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23
+K 150mA LDO Regulator Fixed Positive
+F https://www.tme.eu/Document/cd444021a4430a766dcf0935ea2361ab/AP2120.pdf
+$ENDCMP
+#
+$CMP Fan_3Pin
+D PC 3-pin fan connector
+K connector
+F ~
+$ENDCMP
+#
+$CMP Fan_4Pin
+D PC 4-pin fan connector
+K connector
+F ~
+$ENDCMP
+#
+$CMP LM2903
+D Double comparator
+$ENDCMP
+#
+$CMP Molex_Power
+D PC 4-pin Molex power connector
+K connector
+F ~
+$ENDCMP
+#
+$CMP STLink_Header
+D Header for ST-Link debug tool
+K connector
+F ~
+$ENDCMP
+#
+$CMP Serial_Port
+D Generic serial port ("UART"), no power
+K connector
+F ~
+$ENDCMP
+#
+$CMP USB_Header
+D PC internal USB header
+K connector
+F ~
+$ENDCMP
+#
+#End Doc Library
