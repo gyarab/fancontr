@@ -1,0 +1,72 @@
+\documentclass[a4paper]{report}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{charter}
+\usepackage{environ}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage[bottom]{footmisc}
+\usepackage{tikz}
+\usetikzlibrary{calc, matrix}
+
+\setdefaultlanguage{czech}
+\PolyglossiaSetup{czech}{indentfirst=true}
+
+\usepackage{lmodern}
+
+% For Pandoc
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\setkeys{Gin}{keepaspectratio}
+
+%\titleformat{\chapter}[display]
+%	{\normalfont\bfseries}{}{0pt}{\Huge\thechapter\hspace{1cm}}
+
+\begin{document}
+
+\begin{titlepage}
+	\vspace{9cm}
+	{\centering\Huge Ročníková a maturitní práce \par}
+	{\centering\huge Ovladač počítačových ventilátorů \par}
+
+	\vspace{2cm}
+	
+	\begin{center}
+	\includegraphics[height=10cm]{galogo.png}
+	\end{center}
+
+	\vfill
+
+	{\large \textbf{Autor:} David Koňařík \par}
+	{\large \textbf{Škola:} Gymnázium, Praha 6, Arabská 14 \par}
+	{\large \textbf{Ročník:} 4. E 2019/2020 \par}
+\end{titlepage}
+
+\chapter*{Anotace}
+
+Cílem mé práce bylo vytvořit hardware a software pro automatické ovládání
+počítačových ventilátorů. Výsledný hardware zvládá regulovat oba běžně
+používané typy ventilátorů, třípinové i čtyřpinové, a poskytuje uživateli mnoho
+možností pro nastavení.
+
+\vfill
+
+Prohlašuji, že jsem jediným autorem tohoto projektu, všechny citace jsou řádně
+označené a všechna použitá literatura a další zdroje jsou v práci uvedené.
+Tímto dle zákona 121/2000 Sb. (tzv. Autorský zákon) ve znění pozdějších
+předpisů uděluji bezúplatně škole Gymnázium, Praha 6, Arabská14 oprávnění k
+výkonu práva na rozmnožování díla (§ 13) a práva na sdělování díla veřejnosti
+(§ 18) na dobu časově neomezenou a bez omezení územního rozsahu.
+
+\newpage
+
+\tableofcontents
+\newpage
+
+\input{obsah.tex}
+
+\end{document}
+
